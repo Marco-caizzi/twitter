@@ -11,7 +11,7 @@ var Ctx context.Context
 var Cfg aws.Config
 var err error
 
-func initAWS() {
+func InitAWS() {
 	Ctx = context.TODO()
 	Cfg, err = config.LoadDefaultConfig(Ctx, config.WithRegion("us-east-1"))
 	if err != nil {
